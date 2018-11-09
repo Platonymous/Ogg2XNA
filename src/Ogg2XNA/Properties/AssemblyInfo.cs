@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Ogg2XNA")]
 [assembly: AssemblyDescription("Loads Ogg Files as XNA SoundEffect")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Platonymous")]
 [assembly: AssemblyProduct("Ogg2XNA")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
