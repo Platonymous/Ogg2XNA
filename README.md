@@ -1,6 +1,9 @@
 # Ogg2XNA
 Loads Ogg Files as XNA SoundEffect
 
+### Package
+https://www.nuget.org/packages/Platonymous.Ogg2XNA/
+
 ### Incorporates
 https://archive.codeplex.com/?p=oggsharp
 
