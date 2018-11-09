@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C74DB8F-42EA-42F6-95E7-D05C4014CB0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ogg2XNA</RootNamespace>
+    <AssemblyName>Ogg2XNA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OggLoader.cs" />
+    <Compile Include="CsVorbis\Block.cs" />
+    <Compile Include="CsVorbis\Buffer.cs" />
+    <Compile Include="CsVorbis\CodeBook.cs" />
+    <Compile Include="CsVorbis\Comment.cs" />
+    <Compile Include="CsVorbis\csorbisException.cs" />
+    <Compile Include="CsVorbis\Drft.cs" />
+    <Compile Include="CsVorbis\DspState.cs" />
+    <Compile Include="CsVorbis\EncodeAuxNearestMatch.cs" />
+    <Compile Include="CsVorbis\EncodeAuxThreshMatch.cs" />
+    <Compile Include="CsVorbis\Floor0.cs" />
+    <Compile Include="CsVorbis\Floor1.cs" />
+    <Compile Include="CsVorbis\FuncFloor.cs" />
+    <Compile Include="CsVorbis\FuncMapping.cs" />
+    <Compile Include="CsVorbis\FuncResidue.cs" />
+    <Compile Include="CsVorbis\FuncTime.cs" />
+    <Compile Include="CsVorbis\Info.cs" />
+    <Compile Include="CsVorbis\InfoMode.cs" />
+    <Compile Include="CsVorbis\Lookup.cs" />
+    <Compile Include="CsVorbis\Lpc.cs" />
+    <Compile Include="CsVorbis\Lsp.cs" />
+    <Compile Include="CsVorbis\Mapping0.cs" />
+    <Compile Include="CsVorbis\Mdct.cs" />
+    <Compile Include="CsVorbis\OggDecoder.cs" />
+    <Compile Include="CsVorbis\Packet.cs" />
+    <Compile Include="CsVorbis\Page.cs" />
+    <Compile Include="CsVorbis\PsyInfo.cs" />
+    <Compile Include="CsVorbis\PsyLook.cs" />
+    <Compile Include="CsVorbis\Residue0.cs" />
+    <Compile Include="CsVorbis\Residue1.cs" />
+    <Compile Include="CsVorbis\Residue2.cs" />
+    <Compile Include="CsVorbis\StaticCodeBook.cs" />
+    <Compile Include="CsVorbis\StreamState.cs" />
+    <Compile Include="CsVorbis\SyncState.cs" />
+    <Compile Include="CsVorbis\Time0.cs" />
+    <Compile Include="CsVorbis\VorbisFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
